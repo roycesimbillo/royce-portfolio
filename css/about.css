@@ -428,5 +428,16 @@
     .btn-link {
         width: 100%;
     }
+
+    .goal-container {
+    flex-direction: column;
+    }
+
+    .goal-item ul {
+    list-style-type: disc;
+    margin-left: 15px;
+    width: 100%;
+    }
+
 }
 }
