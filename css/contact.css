@@ -1,0 +1,350 @@
+.contact-hero {
+    text-align: center;
+    padding: 160px 8% 200px;
+    margin-top: 0;
+    background: radial-gradient(circle at 20% 20%, #dc3545, transparent 40%),
+                radial-gradient(circle at 80% 10%, #4a4a4a, transparent 40%),
+                radial-gradient(circle at 50% 100%, #e74c3c, transparent 40%),
+                linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    position: relative;
+}
+
+.contact-hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.contact-hero p {
+    font-size: 20px;
+    opacity: var(--text-secondary);
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.contact-content {
+    padding: 60px 8%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info h2 {
+    font-size: 36px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    font-size: 16px;
+    opacity: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-icon {
+    display: none;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.info-item a,
+.info-item p {
+    opacity: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.info-item a:hover {
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+/* Social Section */
+.social-section h3 {
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--card-bg);
+    border: none;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.response-time {
+    margin-top: 40px;
+}
+
+.response-badge {
+    display: inline-block;
+    padding: 12px 20px;
+    background: rgba(102, 126, 234, 0.15);
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Contact Form */
+.contact-form h2 {
+    font-size: 36px;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-group label span {
+    color: #ff6b6b;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-group select option {
+    color: #000000;
+    background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group.checkbox input {
+    width: auto;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.form-group.checkbox label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.error-message {
+    display: block;
+    color: #ff6b6b;
+    font-size: 13px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.form-message {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.form-message.success {
+    color: #4caf50;
+}
+
+.form-message.error {
+    color: #ff6b6b;
+}
+
+.info-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    color: #d80000;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 80px 8%;
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cta-section h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    opacity: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+/*.cta-section .btn-primary {
+    display: inline-block;
+    padding: 16px 40px;
+    font-size: 16px;
+}*/
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 100px 5% 60px;
+    }
+
+    .contact-hero h1 {
+        font-size: 40px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+    }
+
+    .contact-content {
+        padding: 40px 5%;
+    }
+
+    .contact-container {
+        gap: 40px;
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+        font-size: 24px;
+    }
+
+    .info-items {
+        margin-bottom: 30px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 11px;
+    }
+
+    .cta-section {
+        padding: 60px 5%;
+    }
+
+    .cta-section h2 {
+        font-size: 32px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+}

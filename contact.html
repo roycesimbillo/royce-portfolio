@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Vincent - Get in touch for web development and design projects.">
+    <meta name="keywords" content="contact, email, web developer, hire, collaboration">
+    <meta name="author" content="Vincent">
+    <meta property="og:title" content="Contact Vincent">
+    <meta property="og:description" content="Get in touch with me for your web development projects.">
+    <meta property="og:type" content="website">
+    <title>Contact | RYS - Web Developer & Designer</title>
+    <link rel="canonical" href="https://yourportfolio.com/contact">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div id="theme-toggle" class="theme-toggle" role="button" aria-label="Toggle dark/light mode" tabindex="0">
+        <img class="toggle-icon" src="assets/images/sun.png" alt="Theme Icon">
+    </div>
+
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="logo"><img src="assets/images/Logo.png" alt=""></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-hero" aria-labelledby="contact-title">
+        <h1 id="contact-title">Let's Work Together</h1>
+        <p>I'd love to hear about your project and discuss how I can help</p>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="info-icon"></div>
+                        <h3>Email</h3>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=royce0simbillo@gmail.com" target="_blank">
+                            royce0simbillo@gmail.com
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"></div>
+                        <h3>Phone</h3>
+                        <a href="tel:+1234567890">+63 968 737 3578</a>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"></div>
+                        <h3>Location</h3>
+                        <p>Brgy. Panipuan, San Fernando City, Pampanga</p>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/roycesimbillo" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/royce-simbillo-04178b377/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/roycesimbillo" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/roycesimbillo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="response-time">
+                    <div class="response-badge">Typically responds within 24 hours</div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" name="contact-form" method="POST" novalidate>
+                <h2>Send Me a Message</h2>
+
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-label="required">*</span></label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your Name"
+                        required 
+                        aria-required="true"
+                        autocomplete="name"
+                    >
+                    <span class="error-message" id="name-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span aria-label="required">*</span></label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your@email.com"
+                        required 
+                        aria-required="true"
+                        autocomplete="email"
+                    >
+                    <span class="error-message" id="email-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="0123 456 7890"
+                        autocomplete="tel"
+                    >
+                    <span class="error-message" id="phone-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject <span aria-label="required">*</span></label>
+                    <select 
+                        id="subject" 
+                        name="subject" 
+                        required 
+                        aria-required="true"
+                    >
+                        <option value="">Select a subject...</option>
+                        <option value="Web Development">Web Development Project</option>
+                        <option value="Web Design">Web Appearance Design</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="Freelance">Freelance Work</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Technical Consultation">Technical Consultation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error-message" id="subject-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget Range</label>
+                    <select id="budget" name="budget" autocomplete="off">
+                        <option value="">Select budget range...</option>
+                        <option value="under 1k">Under ₱1,000</option>
+                        <option value="1k - 3k">₱1,000 - ₱3,000</option>
+                        <option value="3k - 5k">₱3,000 - ₱5,000</option>
+                        <option value="above 5k">Above ₱5,000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span aria-label="required">*</span></label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Tell me about your project..."
+                        rows="6"
+                        required 
+                        aria-required="true"
+                    ></textarea>
+                    <span class="error-message" id="message-error" role="alert"></span>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="terms" 
+                        name="terms" 
+                        required 
+                        aria-required="true"
+                    >
+                    <label for="terms">
+                        I agree to the privacy policy and terms of service
+                    </label>
+                    <span class="error-message" id="terms-error" role="alert"></span>
+                </div>
+
+                <button type="submit" class="btn-primary submit-btn">Send Message</button>
+                <span class="form-message" id="form-message" role="status" aria-live="polite"></span>
+            </form>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Contact me today and let's discuss your ideas</p>
+        <a href="#contactForm" class="btn-primary">Email Me Now</a>
+    </section>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Royce's Portfolio</h4>
+                <p>My personal e-portfolio showcasing my web development and design projects.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h4>Social</h4>
+                <div class="social-links">
+                    <a href="https://github.com/roycesimbillo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/royce-simbillo-04178b377/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://www.facebook.com/roycesimbillo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                    <a href="https://www.instagram.com/roycesimbillo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Royce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
