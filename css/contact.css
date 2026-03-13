@@ -3,9 +3,9 @@
     padding: 160px 8% 200px;
     margin-top: 0;
     background: radial-gradient(circle at 20% 20%, #dc3545, transparent 40%),
-                radial-gradient(circle at 80% 10%, #4a4a4a, transparent 40%),
+                radial-gradient(circle at 80% 10%, rgba(102, 126, 234, 0.3), transparent 40%),
                 radial-gradient(circle at 50% 100%, #e74c3c, transparent 40%),
-                linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+                var(--background-gradient);
     position: relative;
 }
 

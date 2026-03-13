@@ -3,9 +3,9 @@
     padding: 160px 8% 200px;
     margin-top: 0;
     background: radial-gradient(circle at 30% 10%, #dc3545, transparent 40%),
-                radial-gradient(circle at 70% 20%, #5a5a5a, transparent 40%),
+                radial-gradient(circle at 70% 20%, rgba(102, 126, 234, 0.3), transparent 40%),
                 radial-gradient(circle at 50% 90%, #e74c3c, transparent 40%),
-                linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+                var(--background-gradient);
     position: relative;
 }
 
@@ -330,6 +330,33 @@
     line-height: 1.8;
 }
 
+/* Goal */
+.goal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.goal-item {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.goal-item h3 {
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.goal-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-right: 120px;
+}
+.goal-item li {
+    opacity: var(--text-secondary);
+}
 /* Responsive */
 @media (max-width: 1024px) {
     .skills-container {
