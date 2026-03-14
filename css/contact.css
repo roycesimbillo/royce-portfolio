@@ -135,6 +135,44 @@
     font-size: 14px;
 }
 
+.resume-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.resume-section h3 {
+    font-size: 18px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.btn-download-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--accent-color), #b91c3f);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-download-resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+    background: linear-gradient(135deg, #b91c3f, var(--accent-color));
+}
+
+.btn-download-resume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
 /* Contact Form */
 .contact-form h2 {
     font-size: 36px;
